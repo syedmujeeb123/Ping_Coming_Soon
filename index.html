@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ping_Coming_Soon</title>
+    <style>
+      .error-outline {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body class="text-center">
+    <!-- Card-Container -->
+    <div
+      class="card-container relative p-4 mt-10 mx-auto flex flex-col max-w-2xl justify-center items-center gap-4"
+    >
+      <img src="./images/logo.svg" class="max-w-[100px]" />
+      <h2 class="text-3xl text-neutral-gray">
+        We are launching
+        <span class="font-bold text-neutral-veryDarkBlue">soon!</span>
+      </h2>
+      <p class="text-neutral-veryDarkBlue mb-4">Subscribe and get notified</p>
+      <form class="md:flex md:flex-row gap-4 md:w-3/4 w-full flex flex-col">
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Your email address..."
+          class="border-2 rounded-full mb-4 md:mb-0 md:w-2/3 w-full py-1 px-4"
+        />
+
+        <button
+          type="submit"
+          name="button"
+          class="py-2 px-8 rounded-full bg-primary text-white transition-all duration-300 ease-in-out hover:opacity-80 hover:scale-105 hover:shadow-lg"
+        >
+          Notify me
+        </button>
+      </form>
+      <p
+        class="absolute error-text text-red-500 md:top-56 md:left-28 top-[170px] hidden"
+      >
+        Please provide a valid email address
+      </p>
+
+      <img
+        src="./images/illustration-dashboard.png"
+        width="500px"
+        class="mt-12"
+      />
+      <div class="flex justify-center items-center mt-8 gap-6">
+        <img src="./images/facebook.png" class="w-6 h-6" />
+        <img src="./images/twitter.png" class="w-6 h-6" />
+        <img src="./images/instagram.png" class="w-6 h-6" />
+      </div>
+      <p>© Copyright Ping. All rights reserved.</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
